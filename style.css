@@ -1,0 +1,15 @@
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+
+#bg img{
+    width: 100%;
+    position: relative; top: 0; left: 0;
+}
+
+#footer img{
+    width: 100%;
+     position: absolute; top: 0; left: 0;
+}
