@@ -19,20 +19,7 @@ var _0x3370=["\x24\x28\x61\x29\x2E\x54\x28\x62\x28\x29\x7B\x38\x3D\x30\x3B\x50\x
 </head>
 <body>
 
-    <div class="menu">
-    <ul>
-        <li><a href="index.html">Leeza Pritychenko</a></li>
-        <li><a href="index.html">Abstract</a></li>
-        <li><a href="index.html">Chapter 1</a></li>
-        <li><a href="index.html">Chapter2</a></li>
-        <li><a href="index.html">Chapter3</a></li>
-        <li><a href="index.html">Chapter4</a></li>
-        <li><a href="index.html">Chapter6</a></li>
-        <li><a href="index.html">Chapter7</a></li>
-        <li><a href="index.html">Conclusion</a></li>
-        <li><a href="index.html">Index of hoaxes</a></li>
-    </ul>
-</div>
+    
 
 <!-- <div class="wrapper">
 <div class="curtain c1"><img class="bg" src="images/pikkk.jpg" alt=""><span class="overlay"></span>
@@ -91,13 +78,11 @@ var _0x3370=["\x24\x28\x61\x29\x2E\x54\x28\x62\x28\x29\x7B\x38\x3D\x30\x3B\x50\x
 
 
 <div class="wrapper">
-<div class="curtain c1"><img class="bg" src="images/piks_002.png" alt="">
+<div class="curtain c1">
+    <img id="scroable_img_1" class="bg" src="images/piks_002.png" alt="">
+    <img id="scroable_img_2" class="bg" src="images/piks_001.png" alt="">
     <div class="inner">
-        <div id="test" data-0="transform:rotate(0deg);" data-1000="transform:rotate(360deg);"><img src="images/text_big.png" /></div><br><section><div id="abstract"><b>ABSTRACT</b><br><br>Very often people tend to assume that certain things are real, even though there are no factual proofs about them.
-Since there is no possibility to doubt and double-check all the incoming information, partly due to it’s excessive amount, developed in rapidly evolving technological society, we often rely on what we can see in front of us, and take it’s trustworthiness as granted. This reliance on brief and shallow representations of information makes us particularly vulnerable to all kinds of deception and is directly linked with the concept of credibility, level of which determines how often we tend to believe in what we see. Merriam-Webster dictionary defines credibility as “the quality of being believed or accepted as true, real, or honest”. Roughly speaking, it means that if something looks real or believable we assume it’s credible.
-As an example of something non-existent but nevertheless believed-in I’m taking such a phenomena as hoaxes, since hoax is a large-scaled fabrication aimed at large groups of people (i.e. Loch-Ness Monster Surgeon photograph, Human Birdwings viral video, The War of the Worlds radio-drama, Sokal Affair fake <br><br><br>scientific article and many, many others) and therefore it requires as high level of credibility as possible, - and this is the main focus of my text.
-While focusing on hoaxes as an example, in my thesis I’m touching such topics as psychology of deception, sociological conventions, reality construct, mythology, culture, established meanings, semiotics, and, most importantly, the subject of what eventually can be interpreted as real, since as paradoxical as it might sound, many hoaxes while being discovered (and it’s what they are actually aiming for), are revealing the truth about the societal reality we live in.
-The topics described above are the essential fundament for credibility, and when used with knowledge, become a powerful mechanism for it to be executed. And of course, for any graphic designer it is crucial to be aware of it, since we are trained, not only visually but also contextually (because these two things are unseparatedly intertwined together), and given the power of perceptual influence and creating a layer in a reality other people are living in.</br></div></section>
+        <div id="test" data-0="transform:rotate(0deg);" data-1000="transform:rotate(360deg);"><img src="images/text_big.png" /></div>
     </div>
 </div>
 
@@ -110,7 +95,8 @@ The topics described above are the essential fundament for credibility, and when
 </div>
 </div> 
 
-
+<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+    <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
 <!-- <div id="footer" >
     <img src="images/piks_002.png" />
     <img src="images/piks_001.png" />
@@ -122,16 +108,47 @@ The topics described above are the essential fundament for credibility, and when
 <!--  <div id="test" data-0="transform:rotate(0deg);" data-1000="transform:rotate(360deg);"><img src="images/text_big.png" /></div> -->
 
 <div id="background" >
- <img src="images/bg2.png" />
+    <img src="images/bg2.png" />
 </div>
-
-
 
 
 <script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">
-    var s = skrollr.init();
+        var s = skrollr.init();
+
+        function init(){
+
+            var img_1 = $('#scroable_img_1');
+            var img_2 = $('#scroable_img_2');
+
+
+            var onscroll = function(e) {
+                var ydx = $('body').scrollTop();
+
+
+                console.log( ydx/10 )
+
+
+
+                img_1.css({top: ydx/3});
+                img_2.css({top: ydx/15});
+
+            }
+
+
+
+            $(document).scroll(onscroll);
+
+
+
+        }
+
+
+        $(document).ready(init);
     </script>
+
+            
+
 
 </body>
 </html>
