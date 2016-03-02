@@ -96,25 +96,28 @@ a {
     position:fixed;
     bottom:30px;
     left:10px;
+    display: table;
 }
 
 .dropdown {
-    display:block;
+    display: table-row;
+    text-align: center;
     -webkit-filter: drop-shadow(0px 0px 2px #222);
 
 }
 
+.dropdown > img {
+    display: table-cell;
+}
 .dropdown-content {
-    display: none;
-    position:fixed;
-    min-width: 120px;
-    left:120px; 
-
+    visibility: hidden;
+    display: table-cell;
+    vertical-align: middle;
 
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
 
 }
 
