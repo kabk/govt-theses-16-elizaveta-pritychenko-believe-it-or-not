@@ -404,6 +404,7 @@ a {
 
 
 .anotheroverlay {
+	overflow:hidden;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -415,15 +416,17 @@ a {
 }
 
 .anotheroverlay:target {
+	overflow:hidden;
   visibility: visible;
   opacity: 1;
   z-index: 9999999999;
-  overflow:scroll;
+  
   background-image: url("img/index_bg.jpg");
   transition: all 5s ease-in-out; 
 }
 
 .popup {
+	overflow:hidden;
   margin: 3% auto;
   padding: 40px;
   background: white;
@@ -437,6 +440,7 @@ a {
 
 
 .popup .close {
+	overflow:hidden;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -452,11 +456,22 @@ a {
   text-decoration: underline;
 }
 .popup .content {
+
   max-height: 550px;
-  overflow: auto;
+  overflow-y: scroll;
   font-family: "Circular", helvetica, arial, sans-serif;
   font-size: 18px;
 
+
+}
+
+.popup .content::-webkit-scrollbar
+{
+    width:0px;
+}
+.popup .content::-webkit-scrollbar-track-piece
+{
+    background-coor:transparent;
 }
 
 #print_icon_1 {
@@ -686,6 +701,7 @@ width:300px;
 .footnote:hover .footnote-content {
     display: block;
 }
+
 
 .footnote:hover .footnote-content-image {
     display: block;
