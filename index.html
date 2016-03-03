@@ -22,6 +22,27 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+
+        <script>
+        $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+        </script>
+
 </head>
 
 <!-- <div id="navbar">
@@ -51,56 +72,56 @@
 <div id="contents_bar">
 
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_001.png" width="120"></center>
+  <center><a href="#one"><div id="horse_icon"><img src="img/desktop_icons/transparent_wide.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#one"> Chapter I </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_002.png" width="45"></center>
+  <center><a href="#two"><div id="file_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#two"> Chapter II </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_001_1.png" width="60"></center>
+  <center><a href="#three"><div id="earth_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#three"> Chapter I </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_002_2.png" width="60"></center>
+  <center><a href="#four"><div id="andy_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#four"> Chapter II </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_003.png" width="60"></center>
+  <center><a href="#five"><div id="green_screen_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#five"> Chapter III </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
- <center> <img src="img/chapters_icons/chapter_004.png" width="80"></center>
+ <center> <a href="#six"><div id="bigfoot_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#six"> Chapter IV </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/chapter_005.png" width="80"></center>
+  <center><a href="#seven"><div id="massage_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#seven"> Chapter V </a></div>
   </div>
 </div>
-<br>
+
 <div class="dropdown">
-  <center><img src="img/chapters_icons/conclusion.png" width="60"></center>
+  <center><a href="#eight"><div id="conclusion_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
   <div class="dropdown-content">
     <div class="chapter_menu_link"><a href="#eight"> Conclusion </a></div>
   </div>
@@ -223,13 +244,13 @@ https://vimeo.com/67627359
 </div>
 
 <div id="print_icon_1"></div> 
-<div id="print_icon_2"></div> 
+<div id="print_icon_2"><a href="print_stuff.pdf" print><center> <img src="img/desktop_icons/transparent.png"></center></a></div> 
 
 <div id="running_text">
     <marquee behavior="scroll" direction="right"> Bachelor thesis by Elizaveta Pritychenko, 2016, Royal Academy of Art, The Hague </marquee>
 </div>
 
-<div id="info_icon"> <div class="info_icon_content"> Written, designed and produced by <b> Elizaveta Pritychenko </b>. <br> If you have any questions or would like to purchase a print version [;)] do not hesitate to e-mail me: <b> isabel.izobel@gmail.com  <br> leeeeeza.com </b> </div> </div>
+<div id="info_icon"> <div class="info_icon_content"> Written, designed and produced by <b> Elizaveta Pritychenko </b>. <br> If you have any questions do not hesitate to e-mail me: <b> info.leeeeeza@gmail.com  <br> leeeeeza.com </b> </div> </div>
 
 <body>
     
@@ -242,7 +263,7 @@ https://vimeo.com/67627359
 <div id="popup1" class="anotheroverlay">
     <div class="popup">
         <a class="close" href="#">&times;</a>
-        <div class="content">
+        <div class="content"> 
 Very often people tend to assume that certain things are real, even though there are no factual proofs about them.<br><br>
 Since there is no possibility to doubt and double-check all the incoming information, partly due to it’s excessive amount, developed in rapidly evolving technological society, we often rely on what we can see in front of us, and take it’s trustworthiness as granted. This reliance on brief and shallow representations of information makes us particularly vulnerable to all kinds of deception and is directly linked with the concept of credibility, level of which determines how often we tend to believe in what we see. Merriam-Webster dictionary defines credibility as “the quality of being believed or accepted as true, real, or honest”. Roughly speaking, it means that if something looks real or believable we assume it’s credible.<br><br>
 As an example of something non-existent but nevertheless believed-in I’m taking such a phenomena as hoaxes, since hoax is a large-scaled fabrication aimed at large groups of people (i.e. Loch-Ness Monster Surgeon photograph, Human Birdwings viral video, The War of the Worlds radio-drama, Sokal Affair fake scientific article and many, many others) and therefore it requires as high level of credibility as possible, - and this is the main focus of my text.<br><br>
@@ -505,6 +526,7 @@ Here are some common forms of deception in virtual communities (Grazioli & Jarve
 ·       Other forms of fraud, attempts to fool people to achieve criminal ends, either directly (like fake investments or fake charities) or indirectly (like stealing credit-card numbers or sending email with implanted viruses).<br><br>
 
 Online deception can be classified with respect to mechanism used. Rowe & Rothstein proposes a comprehensive taxonomy based on case grammars for linguistics, or ways to categorize how events can have associated concepts (FRAME IT AND STYLE DIFFERENTLY IN WWW):<br><br>
+<div class="list">
 
 •   deception involving the participants<br>
 •   agent (the person who initiates the action), as when a person pretends to be someone else (easy to do online);<br>
@@ -529,7 +551,9 @@ Online deception can be classified with respect to mechanism used. Rowe & Rothst
 •   value (not applicable online because distortion cannot occur in transmission of messages)<br>
 •   deception in essence<br>
 •   supertype, as when someone sends a useful program that deliberately damages your computer system<br>
-•   whole, as when a useful free program primarily is intended to spy on the user’s activities<br><br>
+•   whole, as when a useful free program primarily is intended to spy on the user’s activities
+</div>
+<br><br>
  
 Besides these general mechanisms, there are additional opportunities for deception in particular virtual communities.  Mintz law-firm surveys common deceptions on the World Wide Web, including misleading Web sites and Web scams like the many forms of the “Nigerian letter” soliciting money for bogus enterprises. Mitnick, the infamous computer security consultant, author and hacker, provides a good survey of “social engineering” deceptions aimed at stealing information and money from computers by manipulating the people that use them. 
 <br><br>
