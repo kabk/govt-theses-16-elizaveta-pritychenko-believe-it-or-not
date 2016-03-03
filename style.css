@@ -98,7 +98,10 @@ a {
     bottom:15px;
     left:10px;
     display: table;
+<<<<<<< HEAD
     height:90%;
+=======
+>>>>>>> 09be6a27c94524bf2be1c159f6bfae8208af3e0f
 }
 
 .dropdown {
@@ -109,6 +112,7 @@ a {
 
 }
 
+<<<<<<< HEAD
 /*.dropdown:hover {
 	width:300px;
 	 -webkit-transition: width 2s, height 2s, background-size 2s, -webkit-transform 2s; /* Safari 
@@ -127,6 +131,15 @@ a {
 
 }
 */
+=======
+.dropdown > img {
+    display: table-cell;
+}
+.dropdown-content {
+    visibility: hidden;
+    display: table-cell;
+    vertical-align: middle;
+>>>>>>> 09be6a27c94524bf2be1c159f6bfae8208af3e0f
 
 .dropdown-content {
     display: table-cell;
@@ -137,8 +150,12 @@ a {
 }
 
 .dropdown:hover .dropdown-content {
+<<<<<<< HEAD
 	visibility:visible;
      opacity:1;
+=======
+    visibility: visible;
+>>>>>>> 09be6a27c94524bf2be1c159f6bfae8208af3e0f
 
 }
 
