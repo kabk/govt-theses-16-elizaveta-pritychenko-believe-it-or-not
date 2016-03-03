@@ -4,10 +4,57 @@ body, html {
     height: 100%;
     width:100%;
 	font-family: "Circular", Helvetica, serif;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@font-face {
+    font-family: "Circular";
+    font-style: normal;
+    font-weight:normal;
+    src: url('fonts/circular/Circular-Book.ttf');
+}
 
+@font-face {
+    font-family: "Circular"; /* the same font family name */
+    font-weight:normal;
+    font-style: italic;
+    src: url('fonts/circular/Circular-MediumItalic.ttf');
+}
 
+@font-face {
+    font-family: "Circular"; /* the same font family name */
+    font-weight:bold;
+    font-style: italic;
+    src: url('fonts/circular/Circular-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "Circular"; /* the same font family name */
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/circular/Circular-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Circular"; /* the same font family name */
+    font-style: italic;
+    font-weight: 900;
+    src: url('fonts/circular/Circular-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: "Circular"; /* the same font family name */
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/circular/Circular-Black.ttf');
+}
+
+@font-face {
+    font-family: "Stanley";
+    font-style: italic;
+    font-weight:normal;
+    src: url('fonts/stanley/stanley-regularitalic-webfont.ttf');
+}
 
 
 
@@ -99,6 +146,7 @@ a {
     left:10px;
     display: table;
     height:90%;
+    z-index:1000000;
 }
 
 .dropdown {
@@ -327,6 +375,7 @@ a {
 	overflow:auto;
 	font-family: "Circular", Helvetica, serif;
 	font-style: italic;
+	font-weight:900;
 	font-size: 12px;
 	width:280px;
 	margin-top:10%;
@@ -352,6 +401,8 @@ a {
 	-webkit-filter: drop-shadow(0px 0px 2px #222);
 }
 
+
+
 .anotheroverlay {
   position: fixed;
   top: 0;
@@ -369,7 +420,7 @@ a {
   z-index: 9999999999;
   overflow:scroll;
   background-image: url("img/index_bg.jpg");
-  /* transition: all 5s ease-in-out; */
+  transition: all 5s ease-in-out; 
 }
 
 .popup {
@@ -401,7 +452,7 @@ a {
   text-decoration: underline;
 }
 .popup .content {
-  max-height: 600px;
+  max-height: 550px;
   overflow: auto;
   font-family: "Circular", helvetica, arial, sans-serif;
   font-size: 18px;
@@ -461,7 +512,7 @@ a {
     -webkit-filter: drop-shadow(0px 0px 2px #222);
     -webkit-transition: width 2s, height 2s, background-size 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, background-size 2s, transform 2s;
-
+	z-index: 8888888;
 }
 
 #info_icon:hover {
@@ -493,6 +544,8 @@ width:300px;
 }
 
 #running_text {
+	font-style:italic;
+	font-weight:bold;
 	top:20px;
 	width:400px;
 	position:fixed;
@@ -501,6 +554,7 @@ width:300px;
 	-moz-transform: rotate(-180deg);  /* FF3.5+ */
 	-o-transform: rotate(-180deg);  /* Opera 10.5 */
 	-webkit-transform: rotate(-180deg);  /* Safari 3.1+, Chrome */
+	z-index: 8888888;
 }
 
 
@@ -531,6 +585,8 @@ width:300px;
 
 }
 
+
+
 .main_chapter_text_italic {
 	font-family: "Stanley", Times, serif;
 	font-style: italic;
@@ -553,9 +609,32 @@ width:300px;
 
 }
 
+#main_chapter_img {
+	width:300px;
+	margin-right:100px;
+	float:right;
+	font-family: "Stanley", Times, serif;
+	font-style: italic;
+	font-size: 12px;
+	text-align:left;
+}
+
+.main_chapter_img_class {
+	-webkit-filter: drop-shadow(0px 0px 2px #222);
+	float:right;
+	padding:15px;
+}
+
+.main_chapter_img_class:hover {
+	-webkit-filter: drop-shadow(0px 0px 2px #222);
+	float:right;
+	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 1px 0 50px -20px black, 0 -9px 0px 0px white, 1px 0 50px -20px black;
+}
+
 #thanks_stuff {
 	width:100%;
 	height:100%;
+	-webkit-filter: drop-shadow(0px 0px 2px #222);
 }
 
 .thank_you {
@@ -665,4 +744,70 @@ width:300px;
     background-size: 100%;
 
     background-repeat: no-repeat;
+}
+
+/*
+
+article {
+margin-left: 0% !important;
+margin-top: 60px;
+}
+
+*/
+
+#two {
+	padding-top:100px;
+
+	
+	background: url("img/chapter_002/bw_no_text.gif");
+    background-size: 100%;
+
+    background-repeat: no-repeat; 
+}
+
+
+
+canvas {
+
+margin:0;
+opacity: 0;
+position: relative;
+width: 100%;
+
+background-size: 80%;
+background-repeat: no-repeat no-repeat;
+background-position: center;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+
+
+ #intro_animated_pik {
+	margin:0 auto;
+	padding:20px;
+	background: url("img/believe_it_or_not.gif");
+	width:500px;
+	height:500px;
+	background-size: 500px;
+	background-repeat: no-repeat no-repeat;
+	background-position: center;
+
+	z-index:10000000;
+	backdrop-filter: blur(100px) grayscale(100%);
+}
+
+#big_fancy_text {
+font-size:55px;
+line-height:60px;
+color:white;
+text-transform: uppercase;
+font-stretch: expanded;
+-webkit-filter: drop-shadow(0px 0px 2px #333);
+
 }

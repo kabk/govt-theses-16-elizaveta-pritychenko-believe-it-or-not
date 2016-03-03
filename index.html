@@ -20,15 +20,31 @@
         <meta property="og:image" content="img/preview_sketch_001.jpg">
         <meta name="language" content="English">
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript">
+        </script> 
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+
+
 
         <script>
         $(document).ready(function(){
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname) {
+      if (this.hash === "#popup1") { return };
       var $target = $(this.hash);
       $target = $target.length && $target
       || $('[name=' + this.hash.slice(1) +']');
@@ -42,6 +58,8 @@
   });
 });
         </script>
+
+
 
 </head>
 
@@ -132,7 +150,7 @@
 
 <div id="hoax_index"> 
     <div id="hoax_index_vertical_title"> Index of Hoaxes </div>
-        <div class="hoax_index_small_text"> <b> [1] "There's a sucker born every minute" is a phrase presumably spoken by David Hannum, in criticism of both P. T. Barnum, an American showman of the mid 19th century, and his customers. The phrase is often credited to Barnum himself. It means "People are foolish, and will always be fools." Phineas Taylor "P. T." Barnum (July 5, 1810 – April 7, 1891) was an American showman and businessman remembered for promoting celebrated hoaxes and for founding the Barnum & Bailey Circus. Although Barnum was also an author, publisher, philanthropist, and for some time a politician, he said of himself, "I am a showman by profession...and all the gilding shall make nothing else of me", and his personal aim was "to put money in his own coffers". Hoaxes executed by Barnum included the infamous "Feejee" mermaid. 
+        <div class="hoax_index_small_text">  [1] "There's a sucker born every minute" is a phrase presumably spoken by David Hannum, in criticism of both P. T. Barnum, an American showman of the mid 19th century, and his customers. The phrase is often credited to Barnum himself. It means "People are foolish, and will always be fools." Phineas Taylor "P. T." Barnum (July 5, 1810 – April 7, 1891) was an American showman and businessman remembered for promoting celebrated hoaxes and for founding the Barnum & Bailey Circus. Although Barnum was also an author, publisher, philanthropist, and for some time a politician, he said of himself, "I am a showman by profession...and all the gilding shall make nothing else of me", and his personal aim was "to put money in his own coffers". Hoaxes executed by Barnum included the infamous "Feejee" mermaid. 
 <br><br>
 [2] In some Greek myths Hermes (Mercury in Roman mythology) is considered to be a god of transitions and boundaries, - and the Trickster, - and outwits other gods for his own satisfaction or for the sake of humankind. He is the patron of thieves and the inventor of lying, a gift he passed on to Autolycus, who in turn passed it on to Odysseus. Another example of a supreme trickster from Greek mythology is Prometheus, one of Titans and a god of fire, who famously gave the human race the gift of fire and the skill of metalwork, an action for which he was punished by Zeus, who ensured everyday that an eagle ate the liver of the Titan as he was helplessly chained to a rock. 
 <br><br>
@@ -239,7 +257,7 @@ http://designobserver.com/feature/will-the-real-ernst-bettler-please-stand-up/64
 
 [34] https://www.behance.net/gallery/16822597/Grafik-BS
 https://vimeo.com/67627359
- </b>
+ 
         </div>
 </div>
 
@@ -252,9 +270,17 @@ https://vimeo.com/67627359
 
 <div id="info_icon"> <div class="info_icon_content"> Written, designed and produced by <b> Elizaveta Pritychenko </b>. <br> If you have any questions do not hesitate to e-mail me: <b> info.leeeeeza@gmail.com  <br> leeeeeza.com </b> </div> </div>
 
-<body>
+
+
+
+
+<script src="upReveal_j.js?78535"></script>
+
+<body onload="init();">
     
 <div id="index"> 
+
+  <!-- <div id="intro_animated_pik"></div> -->
 
     <div id="abstract_and_small_chapter_button"> <a href="#popup1"> <br> Abstract </a></div><br><br><br> 
     <div class="chapter_big_title">How can <br> credibility <br> be achieved <br>visually? </div>
@@ -263,8 +289,8 @@ https://vimeo.com/67627359
 <div id="popup1" class="anotheroverlay">
     <div class="popup">
         <a class="close" href="#">&times;</a>
-        <div class="content"> 
-Very often people tend to assume that certain things are real, even though there are no factual proofs about them.<br><br>
+        <div class="content"> <div id="big_fancy_text"><center>
+Very often people tend to assume that certain things are real, even though there are no factual proofs about them. </center></div><br><br>
 Since there is no possibility to doubt and double-check all the incoming information, partly due to it’s excessive amount, developed in rapidly evolving technological society, we often rely on what we can see in front of us, and take it’s trustworthiness as granted. This reliance on brief and shallow representations of information makes us particularly vulnerable to all kinds of deception and is directly linked with the concept of credibility, level of which determines how often we tend to believe in what we see. Merriam-Webster dictionary defines credibility as “the quality of being believed or accepted as true, real, or honest”. Roughly speaking, it means that if something looks real or believable we assume it’s credible.<br><br>
 As an example of something non-existent but nevertheless believed-in I’m taking such a phenomena as hoaxes, since hoax is a large-scaled fabrication aimed at large groups of people (i.e. Loch-Ness Monster Surgeon photograph, Human Birdwings viral video, The War of the Worlds radio-drama, Sokal Affair fake scientific article and many, many others) and therefore it requires as high level of credibility as possible, - and this is the main focus of my text.<br><br>
 While focusing on hoaxes as an example, in my thesis I’m touching such topics as psychology of deception, sociological conventions, reality construct, mythology, culture, established meanings, semiotics, and, most importantly, the subject of what eventually can be interpreted as real, since as paradoxical as it might sound, many hoaxes while being discovered (and it’s what they are actually aiming for), are revealing the truth about the societal reality we live in. <br><br>
@@ -277,6 +303,15 @@ The topics described above are the essential fundament for credibility, and when
 
 <div id="one"> <div id="abstract_and_small_chapter_button"> Chapter I </div> <br><br>
  <div class="chapter_big_title"> There is a sucker born <br> every minute[1], or <br>"Honigkuchenpferd" experiment" </div> <br><br><br><br><br><br>
+
+ <div id="main_chapter_img">
+    <div class="main_chapter_img_class"><img src="img/chapter_001/test_001.jpg" width="200"> <br>Donkey from Shrek </div>
+    <br>
+    <br>
+    <div class="main_chapter_img_class"><img src="img/chapter_001/test_001.jpg" width="200"> <br>Donkey from Shrek </div>
+</div>
+
+
 <div id="main_chapter_text"> <div class="quote"> “A doubtless reliance on collective assumptions is a thing that never <br>stops surprising me, for the reason <br> is dangerous and illogical.” <br> <br><div class="main_chapter_text_italic">
 — Scherz Honigkuchenpferd </div></div>
 <br><br><br><br><br><br><br><br>
@@ -311,24 +346,21 @@ Apart from the collective trust principle, there are specific nuances, explanati
 
 
 <div id="chapter_transition"></div>
-<div id="two"> <div id="abstract_and_small_chapter_button"> Chapter II </div> <br><br>
-<div class="chapter_big_title"> The Great <br>Unveiling  </div> <br><br><br><br><br><br>
-<div id="main_chapter_text">
+<div id="two"> 
+    <div id="abstract_and_small_chapter_button"> Chapter II </div> 
 
-    There is no such thing as “Honigkuchenpferd experiment”. <br><br>
-The book “The Presumptions of Things” was never written. <br><br>
-German behavioral scientist called Scherz 
-Honigkuchenpferd doesn’t exist.<br><br>
-And actually, what you have read are not even the first 
-and second chapters, it was the introduction.<br><br>
+<canvas id="upReaveal1" width="1920" height="1080" data-num="1" data-bw="img/chapter_002/bw2.gif" data-color="img/chapter_002/color.png" style="background-image:url(img/chapter_002/color.png );" ></canvas> 
 
-You have been hoaxed.
-<br><br>
-Why? 
-<br><br>
-Now that I got your attention, I will explain it in following chapters.
+<script> 
 
-</div>
+
+//    init = function(){
+        $('canvas').upReveal();
+//    }
+
+        init = function(){};
+
+</script>
 
 </div>
 
