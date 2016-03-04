@@ -810,10 +810,18 @@ user-select: none;
 	position:absolute;
 	width:100vw;
 	height:100vh;
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(10px);
 	
 	z-index:10000000000000;
 	-webkit-transition: all 3s; /* Safari */
+
+
+}
+
+#intro_animated_pik:hover {
+	
+    -webkit-filter: blur(0px);
+
 
 
 }
