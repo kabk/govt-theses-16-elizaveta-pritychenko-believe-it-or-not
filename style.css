@@ -330,6 +330,7 @@ a {
 
 #hoax_index {
 	position:fixed;
+	overflow-x:hidden;
 	right:10px;
 	top:0px;
     width: 50px;
@@ -344,7 +345,18 @@ a {
      z-index: 99999999999999999999999;
 }
 
+
+#hoax_index. content::-webkit-scrollbar
+{
+    width:0px;
+}
+#hoax_index .content::-webkit-scrollbar-track-piece
+{
+    background-color:transparent;
+}
+
 #hoax_index:hover {
+
     width: 600px;
 }
 
@@ -370,9 +382,10 @@ a {
 }
 
 .hoax_index_small_text {
+	overflow-x:hidden;
 	display: none;
 	max-height:80%;
-	overflow:auto;
+	overflow-y:auto;
 	font-family: "Circular", Helvetica, serif;
 	font-style: italic;
 	font-weight:900;
@@ -637,19 +650,19 @@ width:300px;
 .main_chapter_img_class {
 	-webkit-filter: drop-shadow(0px 0px 2px #222);
 	float:right;
-	padding:15px;
+	padding:10px;
 }
 
 .main_chapter_img_class:hover {
 	-webkit-filter: drop-shadow(0px 0px 2px #222);
 	float:right;
-	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 1px 0 50px -20px black, 0 -9px 0px 0px white, 1px 0 50px -20px black;
+	 box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); 
 }
 
 #thanks_stuff {
 	width:100%;
 	height:100%;
-	-webkit-filter: drop-shadow(0px 0px 2px #222);
+	
 }
 
 .thank_you {
@@ -678,6 +691,7 @@ width:300px;
     
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
     padding: 12px 16px;
+    z-index:10000000000;
 
 }
 
@@ -849,6 +863,7 @@ user-select: none;
 }
 
 #big_fancy_text {
+	text-align:center;
 font-size:55px;
 line-height:60px;
 color:white;
@@ -859,7 +874,7 @@ font-stretch: expanded;
 }
 
 .hoax_footnote {
-	font-family: "Circular", Helvetica, serif;
+	font-family: "Circular", Helvetica, sans-serif;
 	font-weight:normal;
 	font-style:italic;
 	color:white;
@@ -876,6 +891,46 @@ font-stretch: expanded;
     transition: width 2s, transform 2s;
 
 }
+
+.hoax_footnote_index {
+	font-family: "Circular", Helvetica, serif;
+	font-weight:normal;
+	font-style:italic;
+	color:white;
+	font-size:150%;
+	vertical-align:super;
+	-webkit-filter: drop-shadow(0px 0px 2px #222);
+	display:inline;
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+    -webkit-transition: width 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, transform 2s;
+
+}
+
+.list {
+	
+	font-size: 14px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,255,0.4); 
+    padding: 12px;
+    max-width:600px;
+    text-align:left;
+
+    float: left;
+    background:white;
+ 
+}
+
+/*  
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+*/
 
 
 
