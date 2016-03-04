@@ -416,6 +416,10 @@ a.in_text:hover {
     display:block;
 }
 
+.hoax_index_images {
+
+}
+
 #hoax_index:hover .hoax_index_images {
     display:block;
 }
@@ -655,22 +659,36 @@ width:300px;
 	width:300px;
 	margin-right:100px;
 	float:right;
+	
+}
+
+.main_chapter_img_caption {
 	font-family: "Stanley", Times, serif;
 	font-style: italic;
-	font-size: 12px;
-	text-align:left;
+	font-size: 14px;
+	text-align:right;
+	padding-right:20px;
+	padding-top:10px;
+	opacity:0;
+  	transition:opacity 1s linear;*
 }
+
 
 .main_chapter_img_class {
 	-webkit-filter: drop-shadow(0px 0px 2px #222);
 	float:right;
 	padding:10px;
+
 }
 
 .main_chapter_img_class:hover {
 	-webkit-filter: drop-shadow(0px 0px 2px #222);
 	float:right;
 	 box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); 
+}
+
+.main_chapter_img_class:hover .main_chapter_img_caption{
+	opacity:1;
 }
 
 #thanks_stuff {
@@ -700,12 +718,13 @@ width:300px;
 }
 
 .footnote-content-image {
+	max-width:300px;
     display: none;
     position: absolute;
-    
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
     padding: 12px 16px;
-    z-index:10000000000;
+    z-index:90000000000;
+    right:0;
 
 }
 
@@ -713,7 +732,8 @@ width:300px;
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 200px;
+    min-width: 100px;
+    width:400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border: 2px solid blue;
     padding: 12px;
@@ -726,6 +746,29 @@ width:300px;
     line-height:14px;
 }
 
+.footnote-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    width:150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid blue;
+    padding: 12px;
+    font-family: "Circular", Helvetica, serif;
+    font-size: 14px;
+    font-weight:normal;
+    font-style:normal;
+    z-index:1000000;
+    text-align:justify;
+    line-height:14px;
+}
+
+
+.footnote:hover .footnote-content2 {
+    display: block;
+}
+
 .footnote:hover .footnote-content {
     display: block;
 }
@@ -733,6 +776,7 @@ width:300px;
 
 .footnote:hover .footnote-content-image {
     display: block;
+
 }
 
 .chapter_big_image {
