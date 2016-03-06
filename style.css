@@ -982,6 +982,44 @@ font-stretch: expanded;
  
 }
 
+#ipad {
+	display:none;
+	font-family: "Stanley", Times, serif;
+	font-size: 80px;
+	font-style: italic;
+	text-align: center;
+	vertical-align: text-center;
+	line-height: 100%;
+}
+#mobile {
+	display:none;
+	font-family: "Stanley", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	text-align: center;
+	vertical-align: text-center;
+	line-height: 100%;
+}
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	#ipad {
+	display:block;
+	background-image: url("img/mobile_test.png");
+	background-repeat: no-repeat;
+	font-family: "Stanley", Times, serif;
+	font-size: 80px;
+	font-style: italic;
+	text-align: center;
+	vertical-align: text-center;
+	line-height: 100%;
+}
+/* Styles */ /*
+} */
+
+
 /*  
 
 
